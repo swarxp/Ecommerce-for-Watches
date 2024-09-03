@@ -3,48 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Watches & More </title>
+    <title>SWH Watches & More</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Swiss Time Store</h1>
-        <div class="cart">
-            <span> 🛒 </span>
-            <span id="cart-count"> 0  </span> Items
+    <div>
+    <div class="top-header">
+        <div class="contact-info">
+            <span><i class="fas fa-envelope"></i> </span>
         </div>
+        <div class="free-delivery">FREE DELIVERY ACROSS INDIA</div>
+        <div class="currency-selector">
+            <i class="fas fa-rupee-sign"></i> INR <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+
+    <header>
+        <h1><I> Swiss Time House</I></h1>
+        <h3 font face="Roboto"> Over 50 Stores across Delhi NCR, Tamil Nadu, Puducherry, Karnataka, and Uttar Pradesh</h3>
+        <nav>
+            <ul>
+                <li><a href="#"><u>Home</u></a></li>
+                <li><a href="#"><u>Products</u></a></li>
+                <li><a href="#"><u>About</u></a></li>
+                <li><a href="#"><u>Contact Us</u></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section class="products">
-            <div class="product" data-id="1">
-                <img src="./images/Screenshot 2024-09-03 221207.png" alt="Product 1">
-                <h2>Casio D269 WS-1400H-1AVDF Youth</h2>
-                <p>$13.00</p>
-                <button class="add-to-cart">Add to Cart</button>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 234034.png" alt="Product 1">
+                <h2>Movado X31</h2>
+                <p>$19.99</p>
             </div>
-            <div class="product" data-id="2">
-                <img src="./images/Screenshot 2024-09-03 221455.png" alt="Product 2">
-                <h2>G-Shock GMA-P2100VA</h2>
-                <p>$20.00</p>
-                <button class="add-to-cart">Add to Cart</button>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 221207.png" alt="Product 2">
+                <h2>Casio G-Shock SE382</h2>
+                <p>$29.99</p>
             </div>
-            <div class="product" data-id="3">
-                <img src="./images/Screenshot 2024-09-03 221503.png" alt="Product 3">
-                <h2>G-Shock G1574</h2>
-                <p>$30.00</p>
-                <button class="add-to-cart">Add to Cart</button>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 221455.png" alt="Product 3">
+                <h2> Casio G-Shock R823 Limited Edition</h2>
+                <p>$39.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 221503.png" alt="Product 4">
+                <h2>G-Shock Y45 Youth Series</h2>
+                <p>$49.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 233915.png" alt="Product 5">
+                <h2>Tital Blackstone 787</h2>
+                <p>$59.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 233942.png" alt="Product 6">
+                <h2>Casio G-Shock ATH07</h2>
+                <p>$69.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 233952.png" alt="Product 7">
+                <h2>Casio G-Shock Dark Edition 592B</h2>
+                <p>$79.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 234004.png" alt="Product 8">
+                <h2>Casio G Shock 599A</h2>
+                <p>$89.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 234034.png" alt="Product 9">
+                <h2>Modavo Gold </h2>
+                <p>$99.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 234158.png" alt="Product 10">
+                <h2>Tudor French 457F</h2>
+                <p>$109.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 234305.png" alt="Product 11">
+                <h2>Gucci Apex A23</h2>
+                <p>$119.99</p>
+            </div>
+            <div class="product">
+                <img src="./images/Screenshot 2024-09-03 234233.png" alt="Product 12">
+                <h2>Rado D490</h2>
+                <p>$129.99</p>
             </div>
         </section>
 
-        <section class="cart-items">
-            <h2>Shopping Cart</h2>
-            <ul id="cart-list">
-            </ul>
-            <p>Total: $<span id="cart-total">0.00</span></p>
-            <button id="checkout">Checkout</button>
+        <section class="cart-section">
+            <h2>Your Shopping Cart</h2>
+            <div id="cartContents"></div>
+            <button id="viewTotalBtn"><B>Checkout</B></button>
+        </section>
+
+        <section class="newsletter">
+            <h2>Sign up to our newsletter</h2>
+            <p>Stay updated with the latest offers, trends, and launches. Get exclusive invites to private sales and much more.</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Online Shopping</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Men's Watches</a></li>
+                    <li><a href="#">Women's Watches</a></li>
+                    <li><a href="#">Fashion Brands</a></li>
+                    <li><a href="#">Luxury Brands</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Policies</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Delivery Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Corporate Address</h3>
+                <p>Swiss Group India Pvt Ltd<br>
+                Ground Floor, GCDA Complex,<br>
+                Marine Drive, Cochin - 682031</p>
+                <p>Phone: +91 XXXXXXXXXXX <br>
+                Email: support@swisstimehouse.com</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
