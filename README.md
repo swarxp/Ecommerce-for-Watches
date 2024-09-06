@@ -1,4 +1,3 @@
-Watch Marketplace
 Welcome to the Watch Marketplace, a simple web-based platform showcasing a collection of premium watches and accessories. This project is designed to simulate an online marketplace where users can browse various watch models, explore product details, and interact with a clean, responsive interface.
 
 Tools and Technologies Used
